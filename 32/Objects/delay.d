@@ -1,0 +1,17 @@
+.\objects\delay.o: HARDWARE\delay.c
+.\objects\delay.o: HARDWARE\delay.h
+.\objects\delay.o: .\CORE\stm32f4xx.h
+.\objects\delay.o: .\CORE\core_cm4.h
+.\objects\delay.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\delay.o: .\CORE\cmsis_version.h
+.\objects\delay.o: .\CORE\cmsis_compiler.h
+.\objects\delay.o: .\CORE\cmsis_armcc.h
+.\objects\delay.o: .\CORE\mpu_armv7.h
+.\objects\delay.o: .\CORE\system_stm32f4xx.h
+.\objects\delay.o: .\SYSTEM\stm32f4xx_conf.h
+.\objects\delay.o: .\SYSTEM\misc.h
+.\objects\delay.o: .\CORE\stm32f4xx.h
+.\objects\delay.o: .\SYSTEM\stm32f4xx_gpio.h
+.\objects\delay.o: .\SYSTEM\stm32f4xx_rcc.h
+.\objects\delay.o: .\SYSTEM\stm32f4xx_tim.h
+.\objects\delay.o: .\SYSTEM\stm32f4xx_usart.h

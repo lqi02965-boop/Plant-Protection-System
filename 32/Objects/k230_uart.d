@@ -1,0 +1,17 @@
+.\objects\k230_uart.o: HARDWARE\k230_uart.c
+.\objects\k230_uart.o: HARDWARE\k230_uart.h
+.\objects\k230_uart.o: .\CORE\stm32f4xx.h
+.\objects\k230_uart.o: .\CORE\core_cm4.h
+.\objects\k230_uart.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\k230_uart.o: .\CORE\cmsis_version.h
+.\objects\k230_uart.o: .\CORE\cmsis_compiler.h
+.\objects\k230_uart.o: .\CORE\cmsis_armcc.h
+.\objects\k230_uart.o: .\CORE\mpu_armv7.h
+.\objects\k230_uart.o: .\CORE\system_stm32f4xx.h
+.\objects\k230_uart.o: .\SYSTEM\stm32f4xx_conf.h
+.\objects\k230_uart.o: .\SYSTEM\misc.h
+.\objects\k230_uart.o: .\CORE\stm32f4xx.h
+.\objects\k230_uart.o: .\SYSTEM\stm32f4xx_gpio.h
+.\objects\k230_uart.o: .\SYSTEM\stm32f4xx_rcc.h
+.\objects\k230_uart.o: .\SYSTEM\stm32f4xx_tim.h
+.\objects\k230_uart.o: .\SYSTEM\stm32f4xx_usart.h
