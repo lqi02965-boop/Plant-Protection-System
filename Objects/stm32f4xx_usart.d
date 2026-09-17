@@ -1,0 +1,17 @@
+.\objects\stm32f4xx_usart.o: SYSTEM\stm32f4xx_usart.c
+.\objects\stm32f4xx_usart.o: SYSTEM\stm32f4xx_usart.h
+.\objects\stm32f4xx_usart.o: .\CORE\stm32f4xx.h
+.\objects\stm32f4xx_usart.o: .\CORE\core_cm4.h
+.\objects\stm32f4xx_usart.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\stm32f4xx_usart.o: .\CORE\cmsis_version.h
+.\objects\stm32f4xx_usart.o: .\CORE\cmsis_compiler.h
+.\objects\stm32f4xx_usart.o: .\CORE\cmsis_armcc.h
+.\objects\stm32f4xx_usart.o: .\CORE\mpu_armv7.h
+.\objects\stm32f4xx_usart.o: .\CORE\system_stm32f4xx.h
+.\objects\stm32f4xx_usart.o: .\SYSTEM\stm32f4xx_conf.h
+.\objects\stm32f4xx_usart.o: .\SYSTEM\misc.h
+.\objects\stm32f4xx_usart.o: .\CORE\stm32f4xx.h
+.\objects\stm32f4xx_usart.o: .\SYSTEM\stm32f4xx_gpio.h
+.\objects\stm32f4xx_usart.o: .\SYSTEM\stm32f4xx_rcc.h
+.\objects\stm32f4xx_usart.o: .\SYSTEM\stm32f4xx_tim.h
+.\objects\stm32f4xx_usart.o: .\SYSTEM\stm32f4xx_usart.h
