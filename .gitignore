@@ -1,0 +1,74 @@
+# ==================================================================
+# ★ 私有凭据（严禁提交！模板见同目录下对应的 *.example.* 文件）
+#   约定：凡是 API Key / 云平台账号 / 服务器账号密码 / Token / 设备密钥，
+#         一律抽到单独文件，代码只引用它，并把该文件加到这里。
+# ==================================================================
+# 注意：.gitignore 里 # 只有放在【行首】才是注释，
+#       行尾写 # 注释会让整行变成一个匹配不到的模式！
+#
+# STM32：WiFi + 华为云三元组
+32/USER/secret_config.h
+# 小程序：IAM 账号 + IoTDA 接入信息
+mp/config.js
+# K230：WiFi 凭据（板子上放在 /sdcard/secret_config.py）
+230/secret_config.py
+# PC 端调试脚本：华为云设备凭据
+32/pc_secret.py
+
+# 通用兜底：以后新增的凭据文件按这些命名即自动被忽略
+*.local.*
+*.secret.*
+.env
+.env.*
+
+# 模板文件必须提交（放在最后，覆盖上面的忽略规则）
+!*.example.*
+!*.example
+
+# ---------------- Keil / MDK 编译产物 ----------------
+32/Objects/
+32/Listings/
+32/DebugConfig/
+32/RTE/
+32/*.uvguix.*
+32/*.bak
+32/*.dep
+32/*.lnp
+32/*.sct
+32/*.map
+32/*.lst
+32/build.log
+*.build_log.htm
+*.o
+*.crf
+*.d
+*.axf
+*.hex
+
+# ---------------- Python ----------------
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# ---------------- 模型与数据集（体积大，不入库） ----------------
+yolo/pest_dataset/**/images/
+yolo/pest_dataset/**/labels/
+yolo/runs/
+yolo/*.pt
+yolo/nncase-2.11.0/
+230/sdcard_upload/
+230/_from_board/
+230/_dump/
+230/_mtp_test/
+230/gmodel_dump_dir/
+
+# ---------------- 小程序本地私有配置 ----------------
+mp/project.private.config.json
+
+# ---------------- 临时/排查目录 ----------------
+_probe/
+_sync/
+nul

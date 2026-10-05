@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/setting/setting"
+  ],
+  "window": {
+    "navigationBarTitleText": "农田虫害监测",
+    "navigationBarBackgroundColor": "#1f6f43",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#f5f6f7"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

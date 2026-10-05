@@ -1,0 +1,46 @@
+<view class="page">
+  <!-- 在线状态 -->
+  <view class="status-bar">
+    <view class="dot {{online ? 'on' : 'off'}}"></view>
+    <text>{{online ? '云端已连接 · 更新于 ' + lastUpdate : '云端连接失败'}}</text>
+    <text class="retry" bindtap="refresh">刷新</text>
+    <text class="setting2" bindtap="goSetting">设置</text>
+  </view>
+
+  <!-- 环境数据卡片 -->
+  <view class="cards">
+    <view class="card">
+      <text class="card-title">温度</text>
+      <view class="card-value"><text class="num">{{temp}}</text><text class="unit">℃</text></view>
+    </view>
+    <view class="card">
+      <text class="card-title">湿度</text>
+      <view class="card-value"><text class="num">{{humi}}</text><text class="unit">%RH</text></view>
+    </view>
+    <view class="card">
+      <text class="card-title">虫子数量</text>
+      <view class="card-value"><text class="num">{{pests}}</text><text class="unit">只</text></view>
+    </view>
+  </view>
+
+  <!-- 诱虫灯控制 -->
+  <view class="panel">
+    <view class="panel-head">
+      <text class="panel-title">诱虫灯</text>
+      <switch checked="{{lampOn}}" color="#1f6f43" bindchange="onLampToggle" />
+    </view>
+    <view class="slider-row {{lampOn ? '' : 'disabled'}}">
+      <text class="slider-label">亮度</text>
+      <slider class="slider" min="0" max="100" value="{{brightness}}" activeColor="#8e44ad"
+              block-size="20" disabled="{{!lampOn}}" bindchange="onBrightnessChange" />
+      <text class="slider-value">{{brightness}}%</text>
+    </view>
+  </view>
+
+  <!-- 说明 -->
+  <view class="tips">
+    <text>· 数据经华为云 IoTDA 中转，5 秒自动刷新</text>
+    <text>· 亮度由设备端 PWM 调光，0% 为关闭</text>
+    <text>· 虫数来自 K230 视觉检测，经串口汇总上报</text>
+  </view>
+</view>

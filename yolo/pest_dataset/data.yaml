@@ -1,0 +1,12 @@
+# 数据库根目录与子集路径
+path: D:/ai_project_tree/yolo/pest_dataset
+train: train/images
+val: valid/images
+test: test/images
+
+# 类别数量
+nc: 1
+
+# 类别名称定义（只统计虫子数量，统一归为 0 类）
+names:
+  0: pest

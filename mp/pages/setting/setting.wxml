@@ -1,0 +1,23 @@
+<view class="page">
+  <view class="tip">
+    <text>{{usingCustom ? '当前: 已自定义云配置(保存在本机)' : '当前: 内置默认云配置'}}</text>
+    <text>\n填写你自己的华为云参数(IoTDA + IAM), 保存后立即生效, 不改代码即可切换云环境。获取方法见项目 README。</text>
+  </view>
+
+  <view class="form">
+    <view class="item" wx:for="{{fields}}" wx:key="key">
+      <text class="label">{{item.label}}</text>
+      <input class="input {{item.password ? 'pw' : ''}}"
+             password="{{item.password}}"
+             value="{{form[item.key]}}"
+             placeholder="{{item.placeholder}}"
+             bindinput="onInput"
+             data-key="{{item.key}}" />
+    </view>
+  </view>
+
+  <view class="btns">
+    <button class="btn save" bindtap="save">保存并验证</button>
+    <button class="btn reset" bindtap="reset">恢复默认</button>
+  </view>
+</view>
